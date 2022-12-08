@@ -1,0 +1,54 @@
+.topnav {
+    overflow: hidden;
+    border: 1px solid black;
+  }
+  
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    
+  }
+  
+
+  .topnav a:hover {
+    background-color: rgb(170, 168, 168);
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .topnav a.active {
+    color: rgb(0, 0, 0);
+  }
+
+  .boxin {
+    border-radius: 25px;
+    width: 400px;
+    height: 500px;
+    background-color: #55555578;
+    }
+
+    .boxinin {
+        background-color: chartreuse;
+        width: 150px;
+        height: 45px;
+        margin:auto;
+        position:relative;
+        border-radius: 10px;
+    }
+    
+        .text1 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .text2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+            
