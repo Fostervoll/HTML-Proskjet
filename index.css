@@ -8,9 +8,9 @@
     float: right;
     color: #000000;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 55px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     
   }
   
@@ -23,32 +23,39 @@
 
   .topnav a.active {
     color: rgb(0, 0, 0);
-  }
+    }
 
   .boxin {
     border-radius: 25px;
-    width: 400px;
-    height: 500px;
-    background-color: #55555578;
-    }
+    width: 700px;
+    height: 850px;
+    background-color: #313638d5;
+    position:relative; left: 70%;
+    color: solid black;
+  }
 
     .boxinin {
         background-color: chartreuse;
-        width: 150px;
-        height: 45px;
+        width: 200px;
+        height: 60px;
         margin:auto;
         position:relative;
         border-radius: 10px;
     }
     
         .text1 {
-        font-size: 55px;
+        font-size: 70px;
         text-align: center;
+        color: #F4F4F6;
     }
 
     .text2 {
         font-size: 35px;
         text-align: center;
+        color: #F4F4F6;
     }
-
+    #image {
+      background: url("https://preview.redd.it/fun6ez5fnas61.png?auto=webp&s=998a8a8e4bc1457415bb0b0ed7b450e056b9663e");
+      background-size:cover
+    }
             
