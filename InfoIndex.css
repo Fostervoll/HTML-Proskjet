@@ -1,0 +1,51 @@
+.topnav {
+    overflow: hidden;
+    border: 1px solid black;
+  }
+  
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 55px;
+    text-decoration: none;
+    font-size: 30px;
+    
+  }
+  
+
+  .topnav a:hover {
+    background-color: rgb(170, 168, 168);
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .topnav a.active {
+    color: rgb(0, 0, 0);
+    }
+
+  .boxin {
+    border-radius: 25px;
+    width: 700px;
+    height: 810px;
+    background-color: #313638d5;
+    position:relative; left: 70%;
+    color: solid black;
+  }
+        .text1 {
+        font-size: 80px;
+        text-align: center;
+        color: #F4F4F6;
+    }
+
+    .text2 {
+        font-size: 44px;
+        text-align: center;
+        color: #F4F4F6;
+    }
+    #image {
+      background: url("https://preview.redd.it/fun6ez5fnas61.png?auto=webp&s=998a8a8e4bc1457415bb0b0ed7b450e056b9663e");
+      background-size:cover
+    }
+            
