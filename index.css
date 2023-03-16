@@ -3,7 +3,7 @@
 }
 .topnav {
     overflow: hidden;
-    
+    background-color:#313638;
     
   }
   
@@ -63,6 +63,11 @@
       background-size:cover
     }
 
+    #imagespill {
+      background: url("https://wallpaperaccess.com/full/3495704.jpg");
+      background-size:cover
+    }
+
     .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -89,8 +94,18 @@
     font-size: 44px;
     text-align: center;
     color: #F4F4F6;
+
+    
 }   
-  .con1{
+  .text5 {
+  font-size: 35px;
+  text-align: center;
+  color: #F4F4F6;
+  line-height: 3rem;
+  padding: 30px;
+  
+  }
+.con1{
     width:100%;
     height:100%;
     
@@ -105,6 +120,13 @@
     border-radius: 40px;
   }
 
+  .pics1{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .ph1{
 
   }
@@ -114,3 +136,25 @@
     color: #F4F4F6;
     font-size: 44px;
   }
+
+  #left {
+    float: left;
+    width: 45%;
+    overflow: hidden;
+    box-shadow: 10px 0px;
+    background-color:#313638 ;
+    
+  }
+  
+  #right {
+    overflow: hidden;
+    border: 3px solid #fff;
+  }
+
+  iframe {
+    margin:auto;
+    display:block;
+}
+
+
+
