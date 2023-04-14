@@ -16,57 +16,126 @@
         <a href="index.html">Home</a> 
     </div>
       <br>
-    
-      <div class="container">
-        <div class="con1">
-          <br>
-          <img class="pics" src="https://images6.alphacoders.com/124/1245270.jpg" alt="COD MW2">
 
-          
+<div class="container">
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://images6.alphacoders.com/124/1245270.jpg" alt="COD MW2" onclick="openModal('myModal1')">
+    <br>
+    <br>
+    <h1 class="conh1">Call of Duty Morden warfare II</h1>
+  </div>
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://external-preview.redd.it/xNXu1qc-fRFRXFrCNKimjznBbieHP-xwszeQt33lhzY.jpg?auto=webp&s=0a034b632bddb44936fab4d41a5ae734a8f1a92b" alt="bfv" onclick="openModal('myModal2')">
+    <br>
+    <br>
+    <h1 class="conh1">Battlefield V</h1>
+  </div>
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://gamerheadquarters.com/articles/images/screenshots/dayz/livoniacover.jpg" alt="DayZ" onclick="openModal('myModal3')">
+    <br>
+    <br>
+    <h1 class="conh1">DayZ Standalone</h1>
+  </div>
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://images.alphacoders.com/215/215183.jpg" alt="DayZ" onclick="openModal('myModal4')">
+    <br>
+    <br>
+    <h1 class="conh1">Arma3</h1>
+  </div>
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://www.pixelstalk.net/wp-content/uploads/images6/Doom-Wallpaper-HD-Free-download.png" alt="DayZ" onclick="openModal('myModal5')">
+    <br>
+    <br>
+    <h1 class="conh1">Doom Eternal</h1>
+  </div>
+  <div class="con1">
+    <br>
+    <img class="pics" src="https://images5.alphacoders.com/917/917971.jpg" alt="DayZ" onclick="openModal('myModal6')">
+    <br>
+    <br>
+    <h1 class="conh1">Red Dead Redemption II</h1>
+  </div>
+</div>
 
-          <br>
-          <br>
-          <h1 class="conh1">Call of Duty Morden warfare II</h1>
-        </div>
-        <div class="con1">
-          <br>
-          <img class="pics" src="https://external-preview.redd.it/xNXu1qc-fRFRXFrCNKimjznBbieHP-xwszeQt33lhzY.jpg?auto=webp&s=0a034b632bddb44936fab4d41a5ae734a8f1a92b" alt="bfv">
-          <br>
-          <br>
-          <h1 class="conh1">Battlefield V</h1>
-        </div>
-        <div class="con1">
-          <br>
-          <img class="pics" src="https://gamerheadquarters.com/articles/images/screenshots/dayz/livoniacover.jpg" alt="Dayz">
-          <br>
-          <br>
-          <h1 class="conh1">DayZ Standalone</h1>
-        </div>
-        <div class="con1">
-          <img class="pics" src="https://images.alphacoders.com/215/215183.jpg" alt="Arma 3">
-          <br>
-          <br>
-          <h1 class="conh1">Arma III</h1>
-        </div>
-        <div class="con1">
-          <img class="pics" src="https://www.pixelstalk.net/wp-content/uploads/images6/Doom-Wallpaper-HD-Free-download.png" alt="DOOM">
-          <br>
-          <br>
-          <H1 class="conh1">DOOM Eternal</H1>
-        </div>
-        <div class="con1">
-          <img class="pics" src="https://images5.alphacoders.com/917/917971.jpg" alt="RDR2">
-          <br>
-          <br>
-          <h1 class="conh1">Red Dead Redemption II</h1>
-        </div>
-      </div>
-    
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Call of Duty Morden warfare II</h2>
+    <p>Modal box content for COD MW</p>
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Battlefield V</h2>
+    <p>Modal box content for testing testing</p>
+  </div>
+</div>
+
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>DayZ Standalone</h2>
+      <p>Modal box content for testing testing</p>
+  </div>
+</div>
+
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Arma III</h2>
+    <p>Modal box content for testing testing</p>
+  </div>
+</div>
+
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Doom Eternal</h2>
+    <p>Modal box content for testing testing</p>
+  </div>
+</div>
+
+<div id="myModal6" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Red Dead Redemption II</h2>
+    <p>Modal box content for testing testing</p>
+  </div>
+</div>
 
 
+<script>
+  // JavaScript function to show the modal box
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+  }
 
+  // Close the modal box when the user clicks on the close button or outside of the modal box
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach((modal) => {
+    const closeBtn = modal.querySelector('.close');
+    window.addEventListener('click', (event) => {
+      if (event.target === modal || event.target === closeBtn) {
+        modal.style.display = 'none';
+      }
+    });
 
-
+    closeBtn.addEventListener("click", function() {
+      // Get the parent modal element of the clicked close button
+      var modal = this.parentElement.parentElement;
+      // Hide the modal by setting its display property to none
+      modal.style.display = "none";
+    });
+  });
+</script>
 
 </body>
 </html>
