@@ -29,16 +29,26 @@
     color: rgb(0, 0, 0);
     }
 
-  .boxin {
+    .logo1{
+      width: 500px;
+    height: 500px;
+
+    }
+
+  .logo {
+    width: 50%;
+  }
+  
+  .boxin1 {
     border-radius: 25px;
-    width: 700px;
-    height: 850px;
+    width: 1000px;
+    height: 1200px;
     background-color: #313638d5;
-    position:relative; left: 70%;
+    position:relative; left: 60%;
     color: solid black;
   }
 
-    .boxinin {
+    .boxinin1 {
         background-color: chartreuse;
         width: 200px;
         height: 60px;
@@ -54,12 +64,13 @@
     }
 
     .text2 {
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
         color: #F4F4F6;
+        max-width: 950px;
     }
     #image {
-      background: url("https://preview.redd.it/fun6ez5fnas61.png?auto=webp&s=998a8a8e4bc1457415bb0b0ed7b450e056b9663e");
+      background: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/1440p-Backgrounds-Free-Download.png");
       background-size:cover
     }
 
@@ -141,6 +152,14 @@
     text-align: center;
     color: #F4F4F6;
     font-size: 44px;
+    margin: 60px 0 10px 0;
+  }
+
+  .conh2{
+    text-align: center;
+    color: #F4F4F6;
+    font-size: 44px;
+    margin: 75px 0 10px 0;
   }
 
   #left {
@@ -345,3 +364,22 @@
 
 
 </style>
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width:30%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}  
+
+.divdiv{
+  background-color: #313638;
+  width: 1000px;
+  height: 1200px;
+  float: right;
+}
