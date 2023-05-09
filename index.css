@@ -3,14 +3,14 @@
 }
 .topnav {
     overflow: hidden;
-    background-color:#313638;
+    background-color:#1aa4db;
     
   }
   
 
   .topnav a {
     float: right;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 14px 55px;
     text-decoration: none;
@@ -20,13 +20,13 @@
   
 
   .topnav a:hover {
-    background-color: rgb(170, 168, 168);
+    background-color: rgb(223, 243, 228);
     color: rgb(0, 0, 0);
   }
   
 
   .topnav a.active {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     }
 
     .logo1{
@@ -41,10 +41,10 @@
   
   .boxin1 {
     border-radius: 25px;
-    width: 1000px;
+    width: 2000px;
     height: 1200px;
     background-color: #313638d5;
-    position:relative; left: 60%;
+    margin: 0 auto;
     color: solid black;
   }
 
@@ -67,11 +67,18 @@
         font-size: 40px;
         text-align: center;
         color: #F4F4F6;
-        max-width: 950px;
+        display: inline-block;
+        max-width: 920px;
     }
+
+    .texte{
+        font-size: 40px;
+        text-align: center;
+        color: #F4F4F6;
+      }
+
     #image {
-      background: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/1440p-Backgrounds-Free-Download.png");
-      background-size:cover
+      background: url(https://images.hdqwalls.com/download/red-dead-redemption-2-the-path-5k-k0-2560x1440.jpg)
     }
 
     #imagespill {
@@ -91,18 +98,18 @@
       transform: translate(-50%, -50%);
       height: 75%;
       width: 90%;
-      background-color: #17151593;
+      background-color: #337CA0;
       border-radius: 65px;
   }
 
   .text3 {
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
     color: #F4F4F6;
 }
 
   .text4 {
-    font-size: 44px;
+    font-size: 54px;
     text-align: center;
     color: #F4F4F6;
 
@@ -200,20 +207,37 @@
   margin: 0 auto; /* sentrer boksen horisontalt */
 }
 
+.my-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #1aa4db;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
 .my-button {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px;
-  background-color: #98CE00;
-  color: #fff;
+  background-color: #1aa4db;
+  color: #000000;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .my-button:hover {
-  background-color: #3C5200;
+  background-color: #ffffff;
 }
+
+.my-button1:hover {
+  background-color: #ffffff;
+}
+
 
 
 .modal {
@@ -257,7 +281,10 @@
 
 .flex-child {
   flex: 1;
-  border: 2px solid yellow;
+
+  text-align: center;
+  margin: 210px 0 10px 0;
+  
 }  
 
 .flex-child:first-child {
@@ -377,9 +404,101 @@
   border: 2px solid red;
 }  
 
+.float-parent-element { 
+  width: 50%; 
+} 
+.float-child-element { 
+  float: left; 
+  width: 50%; 
+} 
+.red { 
+  background-color: red; 
+  margin-left: 50%; 
+  height: 100px; 
+} 
+.yellow { 
+  margin-left: 50%; 
+  height: 100px; 
+  background-color: yellow; 
+}
+
+
+
+
 .divdiv{
-  background-color: #313638;
-  width: 1000px;
-  height: 1200px;
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button {
+  display: inline-block;
+  background-color: #1aa4db;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(223, 243, 228);
+  color: #000000;
+}
+
+/* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #f2f2f2;
+}
+
+
+main {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.hero {
+	margin-bottom: 40px;
+}
+
+.hero__title {
+	font-size: 62px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.hero__description {
+	margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container1 {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+  margin: 350px 0 0px 0px;
+  position: absolute;
+   top: 0px;
+   left:32%;
+}
+
+.hero__logo {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
 }
