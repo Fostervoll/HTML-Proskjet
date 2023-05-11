@@ -22,7 +22,7 @@
     
     <img class="pics" src="https://images6.alphacoders.com/124/1245270.jpg" alt="COD MW2" onclick="openModal('myModal1')">
     
-    <h1 class="conh2">Call of Duty Modern warfare II</h1>
+    <h1 class="conh2">COD MW II</h1>
   </div>
   <div class="con1">
     <img class="pics" src="https://external-preview.redd.it/xNXu1qc-fRFRXFrCNKimjznBbieHP-xwszeQt33lhzY.jpg?auto=webp&s=0a034b632bddb44936fab4d41a5ae734a8f1a92b" alt="bfv" onclick="openModal('myModal2')">
@@ -72,8 +72,17 @@
         <p class="modaltext">Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience.</p>
 
         <div class="button-container">
+          <button class="like-button" onclick="like()">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+          </button>
+          <span id="likeCount">0</span>
+
           <a href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/" class="my-button">buy now</a>
           <a href="https://www.youtube.com/watch?v=r72GP1PIZa0&ab_channel=CallofDuty" class="my-button">View more</a>
+          
+          <button id="shareButton" onclick="copyLink()">Share</button>
+          <input type="text" value="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/"  id="shareLink" readonly style="position: absolute; left: -9999px;">
+        
         </div>
 
       </div>
@@ -109,11 +118,19 @@
       <div class="flex-child magenta">
         <BR>
         <img class="pics1" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Battlefield_v_official_logo.png" alt="">
-        <p class="modaltext">This is the ultimate Battlefield V experience. Enter mankind’s greatest conflict across land, air, and sea with all gameplay content unlocked from the get-go. Choose from the complete arsenal of weapons, vehicles, and gadgets, and immerse yourself in the hard-fought battles of WWII.</p>
+        <p class="modaltext">This is the ultimate Battlefield V experience. Enter mankind’s greatest conflict across land, air. Choose from the complete arsenal of weapons, vehicles, and gadgets, and immerse yourself in the hard-fought battles of WWII.</p>
           <div class="button-container">
+            <button class="like-button" onclick="like()">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+            </button>
+            <span id="likeCount">0</span>
+
           <a href="https://store.steampowered.com/app/1238810/Battlefield_V/" class="my-button">buy now</a>
           <a href="https://www.youtube.com/watch?v=fb1MR85XFOc&t=19s&ab_channel=Battlefield" class="my-button">View more</a>
-          </div>
+          
+          <button id="shareButton" onclick="copyLink()">Share</button>
+          <input type="text" value="https://store.steampowered.com/app/1238810/Battlefield_V/"  id="shareLink1" readonly style="position: absolute; left: -9999px;">
+        </div>
       </div>
 
       
@@ -151,9 +168,17 @@
           <p class="modaltext">The post-soviet country of Chernarus is struck by an unknown virus, turning the majority population into frenzied infected. Fighting over resources has bred a hostile mentality among survivors, driving what’s left of humanity to collapse. You are one of the few immune to the virus</p>
          
             <div class="button-container">
-            <a href="https://store.steampowered.com/app/221100/DayZ/" class="my-button">buy now</a>
+              <button class="like-button" onclick="like()">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+              </button>
+              <span id="likeCount">0</span>
+
+              <a href="https://store.steampowered.com/app/221100/DayZ/" class="my-button">buy now</a>
             <a href="https://www.youtube.com/watch?v=fJmMbl3bqE0&ab_channel=DayZ" class="my-button">View more</a>
-            </div>
+            
+            <button id="shareButton" onclick="copyLink()">Share</button>
+            <input type="text" value="https://store.steampowered.com/app/221100/DayZ/"  id="shareLink2" readonly style="position: absolute; left: -9999px;">
+          </div>
         </div>
        
         <div class="flex-child green">
@@ -188,9 +213,18 @@
         <img class="pics2" src="https://upload.wikimedia.org/wikipedia/commons/8/84/ArmA_3_Logo_%28Transparent%29.png" alt="">
         <p class="modaltext">Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC’s premier military game.</p>
           <div class="button-container">
+
+            <button class="like-button" onclick="like()">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+            </button>
+            <span id="likeCount">0</span>
+
           <a href="https://store.steampowered.com/app/107410/Arma_3/" class="my-button">buy now</a>
           <a href="https://www.youtube.com/watch?v=M1YBZUxMX8g&ab_channel=ArmaPlatform" class="my-button">View more</a>
-          </div>
+          
+          <button id="shareButton" onclick="copyLink()">Share</button>
+          <input type="text" value="https://store.steampowered.com/app/107410/Arma_3/"  id="shareLink3" readonly style="position: absolute; left: -9999px;">
+        </div>
       </div>
       
       <div class="flex-child green">
@@ -225,8 +259,18 @@
         <img class="pics2" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Doom_logo.png" alt="">
         <p class="modaltext">Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.</p>
         <div class="button-container">
+
+          <button class="like-button" onclick="like()">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+          </button>
+          <span id="likeCount">0</span>
+          
+
           <a href="https://store.steampowered.com/app/782330/DOOM_Eternal/" class="my-button">buy now</a>
           <a href="https://www.youtube.com/watch?v=FkklG9MA0vM&ab_channel=BethesdaSoftworks" class="my-button">View more</a>
+        
+          <button id="shareButton" onclick="copyLink()">Share</button>
+          <input type="text" value="https://store.steampowered.com/app/782330/DOOM_Eternal/"  id="shareLink4" readonly style="position: absolute; left: -9999px;">
         </div>
       </div>
       
@@ -262,8 +306,16 @@
         <img class="pics1" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Red_Dead_Redemption_2_Logo.png" alt="">
         <p class="modaltext">Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.</p>
         <div class="button-container">
+
+          <button class="like-button" onclick="like()">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/fb-like-logo-png-transparent.png" alt="Like" class="like-icon">
+          </button>
+          <span id="likeCount">0</span>
           <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="my-button">buy now</a>
           <a href="https://www.youtube.com/watch?v=eaW0tYpxyp0&ab_channel=RockstarGames" class="my-button">View more</a>
+        
+          <button id="shareButton" onclick="copyLink()">Share</button>
+          <input type="text" value="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"  id="shareLink5" readonly style="position: absolute; left: -9999px;">
         </div>
       </div>
       
@@ -665,7 +717,7 @@
       "name": "",
       "link": ""
   },
-    fix this!!!
+   
   {
       "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/ss_73a21e43ec44cac9aab41d122a284582d194d352.1920x1080.jpg?t=1664070673",
       "alt": "",
@@ -804,6 +856,113 @@
     }, 7000);
   
   })();
+
+
+  // share knapp
+  function copyLink() {
+  var shareLink = document.getElementById("shareLink");
+
+  shareLink.select();
+  shareLink.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+function copyLink() {
+  var shareLink1 = document.getElementById("shareLink1");
+
+  shareLink1.select();
+  shareLink1.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+function copyLink() {
+  var shareLink2 = document.getElementById("shareLink2");
+
+  shareLink2.select();
+  shareLink2.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+function copyLink() {
+  var shareLink3 = document.getElementById("shareLink3");
+
+  shareLink3.select();
+  shareLink3.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+function copyLink() {
+  var shareLink4 = document.getElementById("shareLink4");
+
+  shareLink4.select();
+  shareLink4.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+function copyLink() {
+  var shareLink5 = document.getElementById("shareLink5");
+
+  shareLink5.select();
+  shareLink5.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  alert("Link copied!");
+}
+
+
+
+var likeCount = 0;
+var isLiked = false;
+
+function toggleLike() {
+  if (isLiked) {
+    unlike();
+  } else {
+    like();
+  }
+}
+
+function like() {
+  likeCount++;
+  isLiked = true;
+  updateLike();
+}
+
+function unlike() {
+  likeCount--;
+  isLiked = false;
+  updateLike();
+}
+
+function updateLike() {
+  var likeCountElement = document.getElementById("likeCount");
+  likeCountElement.textContent = likeCount;
+  
+  var likeButton = document.getElementById("likeButton");
+  if (isLiked) {
+    likeButton.classList.add("liked");
+  } else {
+    likeButton.classList.remove("liked");
+  }
+}
+
+
   </script>
 
   
